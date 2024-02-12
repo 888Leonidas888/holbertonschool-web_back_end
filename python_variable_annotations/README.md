@@ -42,5 +42,5 @@ def filtrar_pares(salida: list = []) -> list:
 pi: float = 3.14
 ```
 
-> .[!NOTE]. 
+> [!NOTE]
 En resumen, las anotaciones en funciones son una herramienta útil para documentar y especificar los tipos de datos esperados, aunque su uso es opcional.
