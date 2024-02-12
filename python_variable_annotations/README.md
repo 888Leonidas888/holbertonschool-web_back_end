@@ -4,9 +4,9 @@ Las anotaciones en funciones en Python nos permiten añadir información sobre l
 
 ## 1. Sintaxis básica:
 
-- Para especificar el tipo de los argumentos, se coloca el tipo seguido de dos puntos (:) antes del nombre del argumento.
+- Para especificar el tipo de los argumentos, se coloca el tipo seguido de dos puntos (`:`) antes del nombre del argumento.
 
-- Para indicar el tipo de retorno, se utiliza la flecha (->) seguida del tipo de dato.
+- Para indicar el tipo de retorno, se utiliza la flecha (`->`) seguida del tipo de dato.
 
 ### Ejemplo
 
@@ -17,19 +17,25 @@ def suma(a: int, b: int) -> int:
 
 ## 2. Uso opcional
 
-- Es importante destacar que Python ignora las anotaciones. Son una mera nota en el código que indica el tipo esperado, pero no generan errores si no se cumplen.
+- Es importante destacar que **Python ignora las anotaciones**. Son una mera nota en el código que indica el tipo esperado, pero no generan errores si no se cumplen.
 
 - Sin embargo, existen herramientas como **mypy** que permiten realizar el **chequeo de tipos** basado en estas anotaciones.
 
 ## 3. Ejemplos de anotaciones
 
 - Las anotaciones pueden ser accedidas usando `__annotations__`.
+- Se pueden usar tipos de Python como `int`, `str`, `float`, o incluso clases definidas por nosotros.
 
 ### Ejemplo
 
 ```python
 def filtrar_pares(salida: list = []) -> list:
     return [i for i in salida if i % 2 == 0]
+
+print(filtrar_pares.__annotations__)
+
+# Salida de la línea anterior:
+{'salida': <class 'list'>, 'return': <class 'list'>}
 ```
 
 ## 4. Variables y clases
