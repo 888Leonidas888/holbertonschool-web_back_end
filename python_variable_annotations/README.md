@@ -19,7 +19,7 @@ def suma(a: int, b: int) -> int:
 
 - Es importante destacar que **Python ignora las anotaciones**. Son una mera nota en el código que indica el tipo esperado, pero no generan errores si no se cumplen.
 
-- Sin embargo, existen herramientas como **mypy** que permiten realizar el **chequeo de tipos** basado en estas anotaciones.
+- Sin embargo, existen herramientas como **[mypy](https://mypy.readthedocs.io/en/latest/getting_started.html#function-signatures-and-dynamic-vs-static-typing)** que permiten realizar el **chequeo de tipos** basado en estas anotaciones.
 
 ## 3. Ejemplos de anotaciones
 
