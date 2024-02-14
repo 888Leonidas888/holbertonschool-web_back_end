@@ -1,0 +1,26 @@
+Test para el módulo ``9-element_length``
+==============================
+
+Usando la función ```element_length``
+
+Este es un archivo de pruebas, en modo interactivo.
+Empezamos importando ``element_length`` del módulo ``9-element_length``,
+para probar los test ejecut el siguiente:
+python -m doctest -v tests/9-element_length.txt | tail -2
+
+Importación:
+
+    >>> element_length = __import__('9-element_length').element_length
+
+Caso regular:
+
+    >>> print(element_length.__annotations__)
+    {'lst': typing.Iterable[typing.Sequence], 'return': typing.List[typing.Tuple[typing.Sequence, int]]}
+
+    >>> lst = ["apple", "banana", "cherry"]
+    >>> print(element_length(lst))
+    [('apple', 5), ('banana', 6), ('cherry', 6)]
+
+    >>> lst = [[1, 2, 3], (4, 5), "hello"]
+    >>> print(element_length(lst))
+    [([1, 2, 3], 3), ((4, 5), 2), ('hello', 5)]
