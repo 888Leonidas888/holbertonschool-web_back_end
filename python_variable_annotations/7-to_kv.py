@@ -1,4 +1,4 @@
-#!/usr/bin/dev python3
+#!/usr/bin/env python3
 """Anotaciones en Python de tipos complejos."""
 
 
