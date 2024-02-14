@@ -1,0 +1,26 @@
+Test para el módulo ``7-to_kv``
+==============================
+
+Usando la función ```to_kv``
+
+Este es un archivo de pruebas, en modo interactivo.
+Empezamos importano ``to_kv`` del módulo ``7-to_kv``,
+para probar los test ejecut el siguiente:
+python -m doctest -v tests/nombre_test.txt | tail -2
+
+Importación:
+
+    >>> to_kv = __import__('7-to_kv').to_kv
+
+Caso regular:
+
+    >>> print(to_kv.__annotations__)
+    {'k': <class 'str'>, 'v': typing.Union[int, float], 'return': typing.Union[str, float]}
+
+    >>> print(to_kv("eggs", 3))
+    ('eggs', 9)
+
+    >>> print(to_kv("school", 0.02))
+    ('school', 0.0004)
+
+
