@@ -15,4 +15,4 @@ def to_kv(k: str, v: Union[int, float]) -> Union[str, float]:
     Returns:
         tupla : Regresa (k , v ** 2)
     """
-    return (k, v ** 2)
+    return k, v ** 2
