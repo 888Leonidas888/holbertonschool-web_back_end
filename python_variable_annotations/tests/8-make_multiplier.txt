@@ -1,0 +1,22 @@
+Test para el módulo ``8-make_multiplier``
+==============================
+
+Usando la función ```make_multiplier ``
+
+Este es un archivo de pruebas, en modo interactivo.
+Empezamos importano ``make_multiplier `` del módulo ``8-make_multiplier``,
+para probar los test ejecut el siguiente:
+python -m doctest -v tests/nombre_test.txt | tail -2
+
+Importación:
+
+    >>> make_multiplier = __import__('8-make_multiplier').make_multiplier
+
+Caso regular:
+
+    >>> print(make_multiplier.__annotations__)
+    {'multiplier': <class 'float'>, 'return': typing.Callable[[float], float]}
+
+    >>> fun = make_multiplier(2.22)
+    >>> print("{}".format(fun(2.22)))
+    4.928400000000001
