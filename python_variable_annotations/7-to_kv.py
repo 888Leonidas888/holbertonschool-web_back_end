@@ -2,10 +2,10 @@
 """Anotaciones en Python de tipos complejos."""
 
 
-from typing import Union
+from typing import Union, Tuple
 
 
-def to_kv(k: str, v: Union[int, float]) -> Union[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """Eleva al cuadrado el segundo argumento.
 
     Args:
@@ -15,4 +15,4 @@ def to_kv(k: str, v: Union[int, float]) -> Union[str, float]:
     Returns:
         tupla : Regresa (k , v ** 2)
     """
-    return k, v ** 2
+    return (k, v ** 2)

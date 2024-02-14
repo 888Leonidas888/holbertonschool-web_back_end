@@ -15,7 +15,7 @@ Importación:
 Caso regular:
 
     >>> print(to_kv.__annotations__)
-    {'k': <class 'str'>, 'v': typing.Union[int, float], 'return': typing.Union[str, float]}
+    {'k': <class 'str'>, 'v': typing.Union[int, float], 'return': typing.Tuple[str, float]}
 
     >>> print(to_kv("eggs", 3))
     ('eggs', 9)
