@@ -5,7 +5,7 @@
 from typing import Union
 
 
-def to_kv(k: str, v: Union[int | float]) -> Union[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Union[str, float]:
     """Eleva al cuadrado el segundo argumento.
 
     Args:
@@ -15,4 +15,4 @@ def to_kv(k: str, v: Union[int | float]) -> Union[str, float]:
     Returns:
         tupla : Regresa (k , v ** 2)
     """
-    return (k, float(v ** 2))
+    return (k, v ** 2)
