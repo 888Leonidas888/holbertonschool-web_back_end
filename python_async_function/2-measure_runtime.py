@@ -2,6 +2,9 @@
 """Python asíncrono: medir el tiempo de ejecución."""
 
 from time import time
+import warnings
+
+warnings.filterwarnings('ignore', category=RuntimeWarning)
 
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
