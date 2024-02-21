@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Python asíncrono: Tasks 2"""
 
-
+import asyncio
 from typing import List
 
 task_wait_random = __import__('3-tasks').task_wait_random
@@ -17,7 +17,5 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
         Returns:
             List[float]: Una lista con tiempo de espera.
     """
-    temp_list = []
-    for _ in range(n):
-        temp_list.append(await task_wait_random(max_delay))
-    return sorted(temp_list)
+    list_task = [task_wait_random(max_delay) for _ in range(n)]
+    return sorted(await asyncio.gather(*list_task))
