@@ -44,6 +44,42 @@ asyncio.run(main())
 
 Este ejemplo muestra cómo definir funciones asíncronas, utilizar `await` para esperar operaciones asíncronas y ejecutar código asíncrono utilizando el bucle de eventos de `asyncio`.
 
+Aquí otro ejemplo que muestra cómo ejecutar varias tareas de forma asíncrona utilizando la biblioteca asyncio en Python. En este ejemplo, simularemos la descarga de varias páginas web de forma asíncrona:
+
+```python
+import asyncio
+import aiohttp
+
+async def descargar_pagina(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            contenido = await response.text()
+            print(f"Descargada página {url}, tamaño: {len(contenido)} bytes")
+
+async def main():
+    urls = [
+        "https://www.ejemplo.com/pagina1",
+        "https://www.ejemplo.com/pagina2",
+        "https://www.ejemplo.com/pagina3"
+    ]
+
+    # Creamos una lista de tareas asíncronas
+    tareas = [descargar_pagina(url) for url in urls]
+
+    # Ejecutamos las tareas de forma simultánea
+    await asyncio.gather(*tareas)
+
+asyncio.run(main())
+```
+
+En este ejemplo:
+
+- Definimos una función `descargar_pagina` que utiliza aiohttp para hacer una solicitud HTTP asíncrona y descargar el contenido de una página web.
+- La función `main` crea una lista de URLs de las páginas que queremos descargar y luego crea una lista de tareas asíncronas, una para cada página, utilizando una comprensión de listas.
+- Utilizamos `asyncio.gather` para ejecutar todas las tareas asíncronas simultáneamente. Esto permite que las descargas de las páginas se realicen en paralelo, lo que puede ser mucho más eficiente que realizarlas de manera secuencial.
+
+Este es solo un ejemplo básico, pero muestra cómo puedes usar `asyncio` para ejecutar múltiples tareas de forma asíncrona y simultánea en Python.
+
 ## Creación y Ejecución de Tareas Asíncronas
 
 Además de utilizar funciones asíncronas, puedes crear y ejecutar tareas asíncronas individualmente. Aquí está cómo hacerlo:
@@ -58,15 +94,15 @@ async def tarea_asincrona(nombre):
 
 async def main():
     print("Programa principal iniciado")
-    
+
     # Crear y ejecutar tareas asíncronas individualmente
     tarea1 = asyncio.create_task(tarea_asincrona("1"))
     tarea2 = asyncio.create_task(tarea_asincrona("2"))
-    
+
     # Esperar a que todas las tareas se completen
     await tarea1
     await tarea2
-    
+
     print("Programa principal completado")
 
 asyncio.run(main())
