@@ -1,2 +1,8 @@
 #Archivos ignorados
 .dev
+__pycache__/
+python_async_function/__pycache__/
+python_variable_annotations/__pycache__/
+python_async_function/*-main.py
+python_variable_annotations/100-safe_first_element.py
+python_variable_annotations/tests/100-safe_first_element.txt
