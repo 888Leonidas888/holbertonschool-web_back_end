@@ -2,11 +2,11 @@
 """Comprensión asíncrona y generadores asíncronos."""
 
 import asyncio
-from typing import AsyncGenerator
+from typing import Generator
 from random import uniform
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Coroutina que genera valores aleatorios entre 0 y 10
     de manera asíncrona.
