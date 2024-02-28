@@ -1,0 +1,4 @@
+//Este script lista todas las coincidencias. 
+
+
+db.school.find({"name":"Holberton school"})
