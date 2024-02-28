@@ -1,0 +1,5 @@
+// Crea o use una base de datos
+//El siguiente comando creará el archivo para las base de datos
+//pero no aparecerá hasta que tenga datos.
+
+use my_db
