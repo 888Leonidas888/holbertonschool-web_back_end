@@ -1,4 +1,8 @@
 //Este script inserta un documento en la colección de la school: db
 
 
-db.school.insert({"name":"Holberton school"})
+db.school.insert({"name":"Holberton school"}) //Advertencia de desuso:
+
+//WARNING
+//Collection.insert() está en desuso.
+//Utilice insertOne, insertMany o BulkWrite.
