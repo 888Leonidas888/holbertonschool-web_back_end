@@ -1,0 +1,3 @@
+//Este script cuenta la cantidad de documentos en una colección.
+
+db.school.count()
