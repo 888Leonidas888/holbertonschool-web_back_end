@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """Este módulo usa pymongo para listar los documentos."""
 
-from typing import List, Dict, Any
-from pymongo.collection import Collection
 
-
-def list_all(mongo_collection: Collection) -> List[Dict[str, Any]]:
+def list_all(mongo_collection):
     """
     Lista todos los documentos en una colección MongoDB.
 
@@ -15,7 +12,7 @@ def list_all(mongo_collection: Collection) -> List[Dict[str, Any]]:
     Returns:
         List[Dict[str, Any]]: Una lista de documentos de la colección recibida.
     """
-    documents: List[Dict[str, Any]] = []
+    documents = []
 
     cursor = mongo_collection.find()
     documents = [document for document in cursor]
