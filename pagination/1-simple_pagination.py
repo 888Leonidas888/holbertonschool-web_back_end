@@ -34,6 +34,16 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        Entrega un un slice con la paginación solicitada.
+
+        Args:
+            page(int): Número de página.
+            page_size(int): Cantidad de items a devolver.
+
+        Returns:
+            list: [:] Un slice con la items solicitados.
+        """
 
         validar_entero_positivo(page)
         validar_entero_positivo(page_size)
