@@ -8,6 +8,7 @@ Siga el proceso de [instalación](#instalación) para probar cada archivo. En es
 2. [python_async_function](./python_async_function/)
 3. [python_async_comprehesion](./python_async_comprehension/)
 4. [NoSQL](./NoSQL/)
+5. [Pagination](./pagination/)
 
 ## Instalación
 
