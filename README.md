@@ -4,11 +4,12 @@
 
 Siga el proceso de [instalación](#instalación) para probar cada archivo. En este repositorio encontrará los siguientes temas,
 
-1. [python_variable_annotations](./python_variable_annotations/)
-2. [python_async_function](./python_async_function/)
-3. [python_async_comprehesion](./python_async_comprehension/)
+1. [python variable annotations](./python_variable_annotations/)
+2. [python async function](./python_async_function/)
+3. [python async comprehesion](./python_async_comprehension/)
 4. [NoSQL](./NoSQL/)
 5. [Pagination](./pagination/)
+6. [ES6 classes](./ES6_classes/)
 
 ## Instalación
 
