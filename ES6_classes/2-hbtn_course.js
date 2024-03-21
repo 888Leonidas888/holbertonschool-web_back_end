@@ -32,15 +32,15 @@ export default class HolbertonCourse {
   }
 
   _validateString(value) {
-    if (typeof value !== "string") {
-      throw new TypeError("Name must be a string");
+    if (typeof value !== 'string') {
+      throw new TypeError('Name must be a string');
     }
     return value;
   }
 
   _validateNumber(value) {
-    if (typeof value !== "number") {
-      throw new TypeError("Length must be a number");
+    if (typeof value !== 'number') {
+      throw new TypeError('Length must be a number');
     }
 
     return value;
@@ -48,7 +48,7 @@ export default class HolbertonCourse {
 
   _validateArray(value) {
     if (!Array.isArray(value)) {
-      throw new TypeError("Students must be a array");
+      throw new TypeError('Students must be a array');
     }
 
     return value;
