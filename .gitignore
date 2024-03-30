@@ -6,3 +6,9 @@ python_variable_annotations/__pycache__/
 python_async_function/*-main.py
 python_variable_annotations/100-safe_first_element.py
 python_variable_annotations/tests/100-safe_first_element.txt
+ES6_basic/.eslintrc.js
+ES6_basic/babel.config.js
+ES6_basic/node_modules/
+ES6_basic/package-lock.json
+ES6_basic/package.json
+ES6_classes/test_eslint.js
