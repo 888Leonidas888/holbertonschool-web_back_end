@@ -17,7 +17,7 @@
 // }
 
 export default function handleResponseFromAPI(promise) {
-  promise
+  return promise
     .then(() => {
       const response = {
         status: 200,
