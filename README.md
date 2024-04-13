@@ -11,6 +11,7 @@ Siga el proceso de [instalación](#instalación) para probar cada archivo. En es
 5. [Pagination](./pagination/)
 6. [ES6 classes](./ES6_classes/)
 7. [ES6 basic](./ES6_basic/)
+8. [ES6 Promise](./ES6_promise/)
 
 ## Instalación
 
