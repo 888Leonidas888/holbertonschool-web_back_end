@@ -1,4 +1,7 @@
 # Web Backend
+![Static Badge](https://img.shields.io/badge/javascript-blue?logo=javascript)
+![Static Badge](https://img.shields.io/badge/nodejs-12.22.12-blue?logo=nodedotjs)
+![Static Badge](https://img.shields.io/badge/python-3.11.5-blue?logo=python)
 
 ## Tabla de contenido:
 
@@ -12,6 +15,7 @@ Siga el proceso de [instalación](#instalación) para probar cada archivo. En es
 6. [ES6 classes](./ES6_classes/)
 7. [ES6 basic](./ES6_basic/)
 8. [ES6 Promise](./ES6_promise/)
+9. [ES6 Data manipulation](./ES6_data_manipulation/)
 
 ## Instalación
 
@@ -42,7 +46,7 @@ Para trabajar con javascript en su entorno local, instale:
   - `npm install --save-dev babel-jest @babel/core @babel/preset-env`
   - `npm install --save-dev eslint`
 - Configuración de archivos:
-  - [package.json](./package.json)
-  - [babel.config.js](./babel.config.js)
-  - [.eslintrc.js](./.eslintrc.js)
-- Finalamente `npm install`
+  - [package.json](./file_configuration_node/package.json)
+  - [babel.config.js](./file_configuration_node/babel.config.js)
+  - [.eslintrc.js](./file_configuration_node/.eslintrc.js)
+- O también puede ejecutar `npm install` después de tener `package.json`, esto instalará los módulos anteriores.
